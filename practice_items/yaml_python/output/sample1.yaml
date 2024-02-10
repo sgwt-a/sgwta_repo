@@ -1,0 +1,20 @@
+Description: sample1
+IdDef: XXXXXXXXXX
+# comment 1
+InputPorts:
+- Name: port1_in
+  IdDef: AAAAAAAAAA
+  PortType:
+    Path: InCompo1/Int
+    Id: ZZZZZ
+  ConnectedPort:
+    Path: InCompo1/port1
+    Id: QQQQQ
+- Name: port2_in
+  IdDef: BBBBBBBBBB
+  PortType:
+    Path: InCompo1/Int
+    Id: ZZZZZ
+  ConnectedPort:
+    Path: InCompo1/port2
+    Id: WWWWW
