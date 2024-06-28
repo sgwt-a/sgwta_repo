@@ -1,9 +1,10 @@
 
-srcs = glob(["*.cpp", "*/*.cpp", "*/*.hpp"])
+#srcs = glob(["*.cpp", "*/*.cpp", "*/*.hpp"])
+srcs = glob(["*.cpp"])
 # globはリストを引数に持つ。特定のファイル・ディレクトリを除外するオプションもあるそう。
 
 cc_binary(
     name = "hello_world",
     srcs = srcs,
-    #deps = ["//src/greeting"],  # src/greeting/BUILD.bazelのcc_libraryを参照するときに必要
+    deps = ["//src/greeting"],  # src/greeting/BUILD.bazelのcc_libraryを参照するときに必要
 )
