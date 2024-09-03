@@ -23,6 +23,8 @@ def get_molecules_data(file_name):
                 bond_count_dict = collections.Counter(pairs)
                 for atom_id, bond_count in bond_count_dict.items():
                     sorted_pair = sorted([target, atom_id])
-                    # 重複
-
+                    joint = sorted_pair + [bond_count]
+                    if joint not in molecule["joints"]:  # 重複チェック
+                        molecule["joints"].append(joint)
+    return molecule
 
