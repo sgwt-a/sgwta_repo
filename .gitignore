@@ -1,2 +1,4 @@
 *pyc
 bazel-*
+a.out
+*.h.gch
