@@ -2,7 +2,7 @@
 #include "car.h"
 
 // コンストラクタ
-Car::Car() : fuel_(0), migration_(0){
+Car::Car() : public_member(1), fuel_(0), migration_(0){
     std::cout << "Generate Car object." << std::endl;
     std::cout << "  Initialize member variables..." << std::endl;
     std::cout << "    fuel_ = " << fuel_ << std::endl;
