@@ -1,5 +1,5 @@
 from panda3d.core import Point3, PandaNode
-from . import get_molecule_data, get_polar_angles_from_vec
+from . import get_molecules_data, get_polar_angles_from_vec
 
 class PlaceModel:
     def __init__(self, base):
@@ -10,7 +10,7 @@ class PlaceModel:
     def display_molecular_structure(self, molecular_name, parent, is_count_atoms=False):
         # get atom position and bond
         if molecular_name not in self.molecule_dict:
-            self.molecule_dict[molecular_name] = get_molecule_data(molecular_name)  # pdb info
+            self.molecule_dict[molecular_name] = get_molecules_data(molecular_name)  # pdb info
         # dis play molecular structure
         self.display_atom_models(molecular_name, parent, is_count_atoms)
         self.display_joint_models(molecular_name, parent)
@@ -58,7 +58,7 @@ class PlaceModel:
             else:
                 diff_positions = [ Point3(0, 0, 0) ]
             for diff_positoin in diff_positions:
-                sub_placeholder = place.attachNewNode(PandaNode("sub_placeholder"))
+                sub_placeholder = placeholder.attachNewNode(PandaNode("sub_placeholder"))
                 sub_placeholder.setPos(diff_positoin)
                 self.base.joint_model.instanceTo(sub_placeholder)
 

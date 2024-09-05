@@ -12,3 +12,7 @@
 タンパク質の結晶構造データベース
 
 https://pdbj.org/?lang=ja
+
+## 実行方法
+draw_molecular_structure.pyの末尾にて表示させたいpdbファイルを選択し、コマンドで実行。  
+`python3 draw_molecular_structure.py`

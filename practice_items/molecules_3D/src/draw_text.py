@@ -1,5 +1,5 @@
 from direct.gui.DirectGui import OnscreenText
-from panda3.core import TextNode
+from panda3d.core import TextNode
 
 class DrawText(OnscreenText):
     # scale: 文字サイズ

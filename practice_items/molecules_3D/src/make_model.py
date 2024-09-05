@@ -5,12 +5,12 @@ class MakeModel:
     def __init__(self, base):
         self.base = base
         self.base.atom_models = self.make_atom_models()
-        self.base.joint_models = self.make_joint_model()
+        self.base.joint_model = self.make_joint_model()
 
     def make_atom_models(self):
         atom_data = {
             "H": {"color": [1, 1, 1], "radius": 0.31},
-            "C": {"color": [0, 0, 0], "radius": 0.77},
+            "C": {"color": [0, 1, 0], "radius": 0.77},
             "N": {"color": [0, 0, 1], "radius": 0.70},
             "O": {"color": [1, 0, 0], "radius": 0.66},
             "Other": {"color": [0.14, 0.23, 0.42], "radius": 1}
