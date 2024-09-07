@@ -2,9 +2,10 @@ from direct.showbase.ShowBase import ShowBase  # ?
 from panda3d.core import WindowProperties, Point3  # ?
 from src import get_polar_angles_from_vec
 
+
 class App(ShowBase):
-    def __init__(self): # ?
-        ShowBase.__init__(self) # ?
+    def __init__(self):  # ?
+        ShowBase.__init__(self)  # ?
 
         # Set window
         self.props = WindowProperties()
@@ -14,8 +15,8 @@ class App(ShowBase):
         self.setBackgroundColor(0, 0, 0)
 
         # Display sphere
-        positions = [ Point3(0, 20, 0), Point3(2, 23, 4) ]
-        colors = [ (1, 0, 0), (0, 0, 1) ]
+        positions = [Point3(0, 20, 0), Point3(2, 23, 4)]
+        colors = [(1, 0, 0), (0, 0, 1)]
         for position, color in zip(positions, colors):
             sphere = self.loader.loadModel("models/smiley")
             sphere.reparentTo(self.render)  # モデルを配置するノードを指定
@@ -38,6 +39,6 @@ class App(ShowBase):
         cylinder.setPos(center_position)
         cylinder.setHpr(*polar_angles)
 
+
 app = App()
 app.run()
-

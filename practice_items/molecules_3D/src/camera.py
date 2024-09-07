@@ -1,5 +1,6 @@
 from panda3d.core import PandaNode
 
+
 class Camera:
     def __init__(self, base):
         self.base = base
@@ -7,8 +8,8 @@ class Camera:
         base.disableMouse()
         # カメラの設定
         self.camera_radius = 50  # 初期値の設定
-        self.camera_theta = 0    # 初期値の設定
-        self.camera_phi = 90     # 初期値の設定
+        self.camera_theta = 0  # 初期値の設定
+        self.camera_phi = 90  # 初期値の設定
         self.camera_node = base.render.attachNewNode(PandaNode("camera_node"))
         base.camera.reparentTo(self.camera_node)
         base.camera.setHpr(90, 0, 0)

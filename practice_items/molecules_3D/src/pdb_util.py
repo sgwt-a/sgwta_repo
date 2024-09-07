@@ -1,11 +1,9 @@
 import collections
 
+
 def get_molecules_data(file_name):
-    with open(f'pdb_files/{file_name}', 'r') as f:
-        molecule = { 
-            "atoms":[],   # [x, y, z, element_symbol]
-            "joints":[]   # 
-        }
+    with open(f"pdb_files/{file_name}", "r") as f:
+        molecule = {"atoms": [], "joints": []}  # [x, y, z, element_symbol]  #
 
         for line in f:
             values = line.split()
@@ -19,7 +17,7 @@ def get_molecules_data(file_name):
             # get atom connectino info
             if head_value == "CONECT":
                 target = int(values[1])  # 原子ID
-                pairs = [ int(num) for num in values[2:] ]
+                pairs = [int(num) for num in values[2:]]
                 bond_count_dict = collections.Counter(pairs)
                 for atom_id, bond_count in bond_count_dict.items():
                     sorted_pair = sorted([target, atom_id])
@@ -27,4 +25,3 @@ def get_molecules_data(file_name):
                     if joint not in molecule["joints"]:  # 重複チェック
                         molecule["joints"].append(joint)
     return molecule
-
