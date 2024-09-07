@@ -1,0 +1,5 @@
+# .github/config.yml
+pull_request_template:
+  - PULL_REQUEST_TEMPLATE/feature.md
+  #- PULL_REQUEST_TEMPLATE/bugfix.md
+  #- PULL_REQUEST_TEMPLATE/documentation.md
