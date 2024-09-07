@@ -1,0 +1,9 @@
+cc_test(
+    name = "test",  # テストの名前
+    srcs = ["test.cpp"],  # テストのソースコード
+    deps = [
+        "//cpp_bazel_gtest.proj/src/calc_add:calc_add",  # テスト対象のライブラリを指定
+        "@gtest//:gtest",  # gtestの依存関係を指定
+        "@gtest//:gtest_main",  # gtestのmain関数を使用
+    ],
+)
