@@ -3,6 +3,6 @@ cc_binary(
     # calc_addを含めてビルド
     # srcs = ["main.cpp", "main.hpp"] + glob(["*/*.cpp", "*/*.hpp"]),
     # calc_addは別でビルドして参照
-    srcs = ["main.cpp", "main.hpp"],
-    deps = ["//src/calc_add:calc_add"],  # src/calc_addのBUILD.bazelで定義したname=calc_addのcc_libraryを参照
+    srcs = ["src/main.cpp", "src/main.hpp"],
+    deps = ["//cpp_bazel_gtest.proj/src/calc_add:calc_add"],  # src/calc_addのBUILD.bazelで定義したname=calc_addのcc_libraryを参照
 )

@@ -2,5 +2,6 @@ cc_library(
     name = "calc_add",
     srcs = ["calc_add.cpp", "calc_add.hpp"],
     visibility = ["//visibility:public"],
-    linkstatic = 1,
+    #visibility = ["//tests:__pkg__"],  # テストからの参照を許可
+    #linkstatic = 1,
 )
