@@ -23,18 +23,16 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-
     # Move tetrominoes by keybord
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         x -= 1
     if keys[pygame.K_RIGHT]:
         x += 1
-    
+
     # Fall tetrominoes by time
     y += 1
 
-    
     # Display white out
     screen.fill((255, 255, 255))
 

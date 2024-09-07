@@ -21,4 +21,3 @@ https://qiita.com/SeeLog/items/73c054a37722890b17a2
 
 ### 複数のバーを同時表示（きれいに表示できない、、）
 https://qiita.com/nkato_/items/9e2c75013d44050851ed
-

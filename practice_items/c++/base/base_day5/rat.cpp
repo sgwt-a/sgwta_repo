@@ -22,8 +22,3 @@ void Rat::showNum(){
 void Rat::squeak(){
     std::cout << id_ << ": chu~chu~" << std::endl;
 }
-
-
-
-
-

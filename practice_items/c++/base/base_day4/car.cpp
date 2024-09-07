@@ -41,5 +41,3 @@ void Car::supplyFuel(int fuel){
         std::cout << "Failed to supply fuel..." << std::endl;
     }
 }
-
-

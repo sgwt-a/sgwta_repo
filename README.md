@@ -16,8 +16,12 @@
 
 
 ## pre-commit
-- インストール：brew install pre-commit  
-下記コマンドでバージョンが表示されればインストール成功  
+- インストール
+  - コマンド
+    - `pip install pre-commit` ※WSL上ではこっちで実施
+    - `brew install pre-commit`  ※Macbook上ではこっちで実施  
+  - 確認  
+  下記コマンドでバージョンが表示されればインストール成功  
 `pre-commit --version`
 - .pre-commit-config.yamlの作成  
 ルートディレクトリ直下に配置すること
