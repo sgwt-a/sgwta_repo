@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml  # yamlファイルの構文を解析
+        args:
+          - "--unsafe"  # 構文解析のみを実施
+      - id: end-of-file-fixer  # ファイル内の最後の行を改行
+      #- id: trailing-whitespace  # 末尾の空白を削除
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3.7.6
