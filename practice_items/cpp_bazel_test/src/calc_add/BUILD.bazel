@@ -1,0 +1,6 @@
+cc_library(
+    name = "calc_add",
+    srcs = ["calc_add.cpp", "calc_add.hpp"],
+    visibility = ["//visibility:public"],
+    linkstatic = 1,
+)

@@ -2,3 +2,4 @@
 bazel-*
 a.out
 *.h.gch
+MODULE.bazel*

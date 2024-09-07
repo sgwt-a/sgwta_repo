@@ -1,0 +1,8 @@
+cc_binary(
+    name = "add_num",
+    # calc_addを含めてビルド
+    # srcs = ["main.cpp", "main.hpp"] + glob(["*/*.cpp", "*/*.hpp"]),
+    # calc_addは別でビルドして参照
+    srcs = ["main.cpp", "main.hpp"],
+    deps = ["//src/calc_add:calc_add"],  # src/calc_addのBUILD.bazelで定義したname=calc_addのcc_libraryを参照
+)
