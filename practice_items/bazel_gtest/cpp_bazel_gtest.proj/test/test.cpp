@@ -4,6 +4,7 @@
 int32_t CalcAdd(int32_t num1, int32_t num2);
 
 // テストケース
+// 第一引数：テストケース名、第二引数：テスト名　　※"_"を含めてはいけない
 TEST(AdditionTest, PositiveNumbers) {
     EXPECT_EQ(CalcAdd(1, 2), 3);
 }
