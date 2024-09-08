@@ -16,6 +16,7 @@
 
 
 ## pre-commit
+### 導入
 - インストール
   - コマンド
     - `pip install pre-commit` ※WSL上ではこっちで実施
@@ -31,3 +32,6 @@
 `pre-commit installed at .git/hooks/pre-commit`
 - 参考
     - https://qiita.com/shun198/items/7352a5c67bb3284583d1
+
+### 手動でpre-commitを実行してテスト
+`pre-commit run --all-files`
