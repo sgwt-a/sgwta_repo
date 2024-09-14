@@ -35,3 +35,37 @@
 
 ### 手動でpre-commitを実行してテスト
 `pre-commit run --all-files`
+
+
+## Docker環境
+
+## Dockerのインストール
+- インストール
+\\wsl$\Ubuntu-20.04\home\{username}にインストール用のシェルスクリプトを用意済み。  
+下記コマンドを実行。  
+./install_docker.sh
+- 確認  
+  - インストールされたことの確認  
+    ```bash
+    source ~/.bashrc
+    sudo docker run hello-world
+    ```
+    次のようなメッセージが表示されれば成功
+    ```bash
+    Hello from Docker!
+    This message shows that your installation appears to be working correctly.
+    ～略～
+    For more examples and ideas, visit:
+    https://docs.docker.com/get-started/
+    ```
+  - バージョンの確認
+    ```bash
+    docker version
+    ```
+
+### VSCode拡張機能
+WSL上で下記をインストールする。
+- Dev Container
+- Bazel
+- Git Graph
+- Git History
