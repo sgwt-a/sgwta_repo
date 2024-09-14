@@ -3,3 +3,4 @@ bazel-*
 a.out
 *.h.gch
 MODULE.bazel*
+.devcontainer/setting_git_config.sh
