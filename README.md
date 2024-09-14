@@ -88,3 +88,16 @@ WSL上で下記をインストールする。
 - Bazel
 - Git Graph
 - Git History
+
+
+## bazelのインストール
+- 参考文献：https://bazel.build/install/ubuntu?hl=ja#install-on-ubuntu
+- 注意点  
+  BazelのGPGキーを追加する処理で上記参考文献のコマンドをDockerfileに記載するとエラーになる。  
+  ChatGPTに問い合わせたところ、下記成功のコマンドでは無事コンテナビルドでき、bazelがインストールされていることを確認した。
+  ```bash
+  エラー）RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel.archive-keying.gpg
+  ```
+  ```bash
+  成功）RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor -o /usr/share/keyrings/bazel-archive-keyring.gp
+  ```
