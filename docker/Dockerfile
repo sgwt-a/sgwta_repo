@@ -26,10 +26,18 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Python用の追加ライブラリをインストール（必要に応じて） ->  pip3 install 
-RUN pip install \
+RUN pip3 install \
     cpplint \
     gitpython \
-    pre-commit
+    pre-commit \
+    pyyaml==5.3.1 \
+    pandas==1.5.3 \
+    openpyxl==3.1.1 \
+    jinja2 \
+    ruamel.yaml==0.17.21 \
+    panda3d \
+    tqdm
+
 
 # 作業ディレクトリの設定
 WORKDIR /workspaces
