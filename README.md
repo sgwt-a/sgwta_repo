@@ -63,6 +63,13 @@
     ```
 
 ### Dockerのインストール Ubuntu(Macbook)
+1. Docker Desktop for MacOSをインストール  
+    - Docker Desktop: https://www.docker.com/get-started/
+    - インストール手順まとめサイト: https://sukkiri.jp/technologies/virtualizers/docker/docker-mac_install.html
+    - Docker Desktopアプリを起動し、Docker daemonが実行されていることを確認する。（画面上部のメニューバーにアイコン表示される）  
+    Docker daemonをストップするとコンテナの接続が遮断されてしまう。
+
+### Dockerのインストール Ubuntu(Other)
 1. Dockerのインストール
 下記リンク先を見てインストールする。  
 https://docs.docker.com/engine/install/ubuntu/
