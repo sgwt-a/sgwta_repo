@@ -38,8 +38,7 @@
 
 
 ## Docker環境
-
-## Dockerのインストール
+### Dockerのインストール WSL(Windows)
 - インストール
 \\wsl$\Ubuntu-20.04\home\{username}にインストール用のシェルスクリプトを用意済み。  
 下記コマンドを実行。  
@@ -63,8 +62,21 @@
     docker version
     ```
 
+### Dockerのインストール Ubuntu(Macbook)
+1. Dockerのインストール
+下記リンク先を見てインストールする。  
+https://docs.docker.com/engine/install/ubuntu/
+1. sudoなしでdockerコマンドを実行できるようにするために、インストール後にManage Docker as a non-root userの手順を実施する。  
+https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+1. git LFSのインストール
+    ```bash
+    sudo apt update
+    sudo apt install git-lfs
+    git lfs install
+    ```
 ### VSCode拡張機能
-WSL上で下記をインストールする。
+WSL上で下記をインストールする。  
+→　コンテナ上で自動でインストールするようにdevcontainer.jsonに設定済み。
 - Dev Container
 - Bazel
 - Git Graph
