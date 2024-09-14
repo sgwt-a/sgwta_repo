@@ -1,0 +1,23 @@
+// For format details, see https://containers.dev/implementors/json_reference/
+{
+    "name": "SGWTA_REPO",
+    "build": {
+        "dockerfile": "../docker/Dockerfile",
+    },
+    "settings": {},
+    "extensions": [
+        "ms-python.python",         // Python 用の VSCode 拡張機能
+        "ms-vscode.cpptools",       // C/C++ 用の VSCode 拡張機能
+        "mine.cpplint",
+        "DavidAnson.vscode-markdownlint",
+        "bazelbuild.vscode-bazel",
+        "mhutchie.git-graph",          // Git Graph拡張機能
+        "donjayamanne.githistory",     // Git History拡張機能
+        "ms-azuretools.vscode-docker", // Docker拡張機能
+    ],
+    "postCreateCommand": ".devcontainer/post_create_command.sh",
+    "remoteUser": "root", // More info: https://aka.ms/vscode-remote/containers/non-root.  // "root"以外にする場合はDockerfile内で"USER developer"等の設定が必要となる
+    "mounts": [
+        // "type=bind,source=/mnt/c/hogehoge,target=/workspaces/sgwta_repo/hogehoge,consistency=default",
+    ]
+}
