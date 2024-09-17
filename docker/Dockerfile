@@ -41,6 +41,7 @@ RUN pip3 install \
     tqdm
 
 # Bazel install
+## bazelのインストール手順マニュアル：https://bazel.build/install/ubuntu?hl=ja
 ## 下記だとエラー
 # RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel.archive-keying.gpg
 ## 下記だと成功（１行目の末尾）

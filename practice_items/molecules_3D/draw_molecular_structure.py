@@ -7,7 +7,7 @@ class DrawMolecularStructure(ShowBase):  # ShowBaseクラスを継承してDrawM
     def __init__(self, pdb_name, display_name, window_title):
         # ShowBaseの初期化
         # ShowBase.__init__(self)
-        super().__init__(self)
+        super().__init__(self)  # 継承元クラスShowBaseのコンストラクタを実行
 
         # 基本的なウィンドウをカメラの設定
         self.window = Window(

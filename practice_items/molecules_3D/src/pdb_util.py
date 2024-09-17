@@ -1,5 +1,10 @@
 import collections
 
+"""
+@in PDBファイル名
+@return 辞書変数(全原子の位置座標, 全原子ペアのコンタクト数)
+"""
+
 
 def get_molecules_data(file_name):
     with open(f"pdb_files/{file_name}", "r") as f:

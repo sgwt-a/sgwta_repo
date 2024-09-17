@@ -5,7 +5,7 @@
         "dockerfile": "../docker/Dockerfile",
     },
     "settings": {},
-    "extensions": [
+    "extensions": [  // 拡張機能の"More Info"の"Identifier"のIDを記載する
         "ms-python.python",         // Python 用の VSCode 拡張機能
         "ms-vscode.cpptools",       // C/C++ 用の VSCode 拡張機能
         "mine.cpplint",
@@ -15,7 +15,7 @@
         "donjayamanne.githistory",     // Git History拡張機能
         "ms-azuretools.vscode-docker", // Docker拡張機能
     ],
-    "postCreateCommand": ".devcontainer/post_create_command.sh",
+    "postCreateCommand": ".devcontainer/post_create_command.sh",  // コンテナビルド後の処理。実行時のカレントディレクトリに注意。
     "remoteUser": "root", // More info: https://aka.ms/vscode-remote/containers/non-root.  // "root"以外にする場合はDockerfile内で"USER developer"等の設定が必要となる
     "mounts": [
         // "type=bind,source=/mnt/c/hogehoge,target=/workspaces/sgwta_repo/hogehoge,consistency=default",
