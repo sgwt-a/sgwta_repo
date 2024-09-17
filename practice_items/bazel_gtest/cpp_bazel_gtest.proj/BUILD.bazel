@@ -1,8 +1,19 @@
+"""
+src/calc_add/*を含めてビルド
+src/calc_add/BUILD.bazelを削除する必要あり
+"""
+# cc_binary(
+#     name = "add_num_binary",
+#     srcs = ["src/main.cpp", "src/main.hpp"] + glob(["src/calc_add/calc_add.cpp", "src/calc_add/calc_add.hpp"]),
+#     visibility = ["//visibility:public"],  # testから参照されるための設定
+# )
+
+
+"""
+src/calc_add/*は別でcc_libraryをコンパイルし、それを参照してビルド
+"""
 cc_binary(
-    name = "add_num",
-    # calc_addを含めてビルド
-    # srcs = ["main.cpp", "main.hpp"] + glob(["*/*.cpp", "*/*.hpp"]),
-    # calc_addは別でビルドして参照
+    name = "add_num_with_lib",
     srcs = ["src/main.cpp", "src/main.hpp"],
     deps = ["//cpp_bazel_gtest.proj/src/calc_add:calc_add"],  # src/calc_addのBUILD.bazelで定義したname=calc_addのcc_libraryを参照
 )

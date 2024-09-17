@@ -3,10 +3,12 @@
 ## 実施事項
 
 ### Step1: c++, bazelを用いた足し算プログラムの作成
-- 実行コマンド：`bazel run //cpp_bazel_gtest.proj:add_num`
+- 実行コマンド
+  - 全てのファイルを１つのbinaryにした設定の場合：`bazel run //cpp_bazel_gtest.proj:add_num_binary`
+  - src/calc_add/*をcc_libraryでライブラリ化してそれを参照してビルドした場合：`bazel run //cpp_bazel_gtest.proj:add_num_with_lib`
 
 ### Step2: gtestの導入
-- 実行コマンド：`bazel test //cpp_bazel_gtest.proj/test:test --test_output=all`
+- 実行コマンド：`bazel test //cpp_bazel_gtest.proj/test:test_lib_calc_add --test_output=all`
 - 参考：ChatGPT
 - 導入手順
     1. ステップ1: gtest を Bazel ワークスペースに追加  

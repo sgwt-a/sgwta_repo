@@ -1,5 +1,5 @@
 cc_test(
-    name = "test",  # テストの名前
+    name = "test_lib_calc_add",  # テストの名前
     srcs = ["test.cpp"],  # テストのソースコード
     deps = [
         "//cpp_bazel_gtest.proj/src/calc_add:calc_add",  # テスト対象のライブラリを指定
@@ -7,3 +7,17 @@ cc_test(
         "@gtest//:gtest_main",  # gtestのmain関数を使用
     ],
 )
+
+
+"""
+CalcAdd()が未定義というエラーになる。cc_binaryを参照するテストはできない？
+"""
+# cc_test(
+#     name = "test_binary_add_num",  # テストの名前
+#     srcs = ["test.cpp"],  # テストのソースコード
+#     deps = [
+#         "//cpp_bazel_gtest.proj:add_num_binary",  # テスト対象のcc_binaryを指定
+#         "@gtest//:gtest",  # gtestの依存関係を指定
+#         "@gtest//:gtest_main",  # gtestのmain関数を使用
+#     ],
+# )
