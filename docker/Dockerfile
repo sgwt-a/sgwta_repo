@@ -38,7 +38,8 @@ RUN pip3 install \
     jinja2 \
     ruamel.yaml==0.17.21 \
     panda3d \
-    tqdm
+    tqdm \
+    pytest
 
 # Bazel install
 ## bazelのインストール手順マニュアル：https://bazel.build/install/ubuntu?hl=ja
