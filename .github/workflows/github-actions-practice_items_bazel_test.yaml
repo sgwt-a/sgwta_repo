@@ -21,10 +21,10 @@ jobs:
         run: pwd
 
       # 必要な依存関係をインストール（Bazelのセットアップなど）
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y bazel
+      #- name: Install dependencies
+      #  run: |
+      #    sudo apt-get update
+      #    sudo apt-get install -y bazel
 
       # テストの実行
       - name: Run Bazel Tests
