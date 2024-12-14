@@ -1,20 +1,23 @@
 Description: sample1
-IdDef: XXXXXXXXXX
-# comment 1
+IdDef: XXXXXXXXXX # これはInputPortsの行末のコメント
+# これはInputPortsの直前のコメント
 InputPorts:
-- Name: port1_in
-  IdDef: AAAAAAAAAA
-  PortType:
-    Path: InCompo1/Int
-    Id: ZZZZZ
-  ConnectedPort:
-    Path: InCompo1/port1
-    Id: QQQQQ
-- Name: port2_in
-  IdDef: BBBBBBBBBB
-  PortType:
-    Path: InCompo1/Int
-    Id: ZZZZZ
-  ConnectedPort:
-    Path: InCompo1/port2
-    Id: WWWWW
+  # これはInputPortsの直後のコメント
+  - Name: port1_in
+    IdDef: AAAAAAAAAA
+    Description: "port1"
+    PortType:
+      Path: InCompo1/Int  # This is a comment for Path of port1_in
+      Id: ZZZZZ
+    ConnectedPort:
+      Path: InCompo1/port1  # comment
+      Id: QQQQQ
+  - Name: port2_in
+    IdDef: BBBBBBBBBB
+    Description: "port2"
+    PortType:
+      Path: InCompo1/Int
+      Id: ZZZZZ
+    ConnectedPort:
+      Path: InCompo1/port2
+      Id: WWWWW
