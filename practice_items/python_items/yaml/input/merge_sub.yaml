@@ -1,0 +1,9 @@
+FileName: Sample_merge_sub
+DefineInterface:
+  UpdateSignals:
+    - name: "port_F"
+      type: uint8_t
+      init_value: "0"
+    - name: port_G
+      type: "uint8_t"
+      init_value: "0"  # option

@@ -1,0 +1,15 @@
+FileName: Sample_merge_sub
+DefineInterface:
+  UpdateSignals:
+    - fname: "frame_A"
+      signals:
+      - channel: "2"
+        name: "port_F"
+        type: uint8_t
+        init_value: "0"
+    - fname: "frame_Z"
+      signals:
+      - channel: "2"
+        name: port_G
+        type: "uint8_t"
+        init_value: "0"  # option

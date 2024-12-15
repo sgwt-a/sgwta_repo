@@ -1,0 +1,60 @@
+Description: "sample yaml file of merge_yaml.py"
+
+#
+# FileName
+#
+FileName: Sample_merge_main
+
+#
+# Option Setting
+#
+Option:
+  #
+  # OptionName
+  #
+  OptionName: merge_main
+  #
+  # OptionType
+  #
+  OptionType: "1"
+
+### DefineInterface
+DefineInterface:
+  #
+  # UpdateSignals
+  #
+  UpdateSignals:
+  - fname: "frame_A"
+    signals:
+    - channel: "2"
+      name: "port_A"
+      type: uint8_t
+      init_value: "0"
+    - channel: "1"
+      name: port_B
+      type: "uint8_t"
+      init_value: "0"
+    - channel: "2"
+      name: "port_F"
+      type: uint8_t
+      init_value: "0"
+  - fname: "frame_B"
+    signals:
+    - channel: "2"
+      name: port_C
+      type: uint8_t
+      init_value: "0"
+    - channel: "2"
+      name: port_D
+      type: uint8_t
+      init_value: "0"
+    - channel: "2"
+      name: port_E
+      type: uint8_t
+      init_value: "0"
+  - fname: "frame_Z"
+    signals:
+    - channel: "2"
+      name: port_G
+      type: "uint8_t"
+      init_value: "0"    # option
