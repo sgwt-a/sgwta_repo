@@ -1,0 +1,63 @@
+Description: ""
+InputPorts:
+  - name: tc_in_if_can_gl_base_SIGNAL_A
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlBase/TypeA
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlBase/SIGNAL_A
+      IdDef: xxxx
+  - name: tc_in_if_can_gl_base_SIGNAL_B
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlBase/TypeB
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlBase/SIGNAL_B
+      IdDef: xxxx
+  - name: tc_in_if_can_gl_mm_SIGNAL_C
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMm/TypeC
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlMm/SIGNAL_C
+      IdDef: xxxx
+  - name: tc_in_if_can_gl_mm_SIGNAL_D
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMm/TypeD
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlMm/SIGNAL_D
+      IdDef: xxxx
+  - name: tc_in_if_can_gl_mzd_fot_SIGNAL_E
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMzdFot/TypeE
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlMzdFot/SIGNAL_E
+      IdDef: xxxx
+  - name: tc_in_if_can_gl_mzd_fot_SIGNAL_F
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMzdFot/TypeF
+      IdDef: xxxx
+    ConnectedPort:
+      Path: TcInIfCanGlMzdFot/SIGNAL_F
+      IdDef: xxxx
+OutputPorts:
+  - name: OUT_SIGNAL_1
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMzd/Type1
+  - name: OUT_SIGNAL_2
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMzd/Type2
+  - name: OUT_SIGNAL_3
+    IdDef: xxxx
+    PortType:
+      Path: TcInIfCanGlMzd/Type3
