@@ -1,0 +1,22 @@
+Dump:
+{%- for dump_path in dump_path_list %}
+  - Node: "{{ dump_path }}"
+{% endfor %}
+
+Nodes:
+{%- for node in node_list %}
+  - "{{ node.compo_name }}/{{ node.node_name }}"
+{%- endfor %}
+
+Remap:
+  CompoRemap:
+{%- for compo_remap in compo_remap_list %}
+    - Origin: {{ compo_remap.origin }}
+      Remapped: {{ compo_remap.remapped }}
+{%- endfor %}
+  PortRemap:
+{%- for port_remap in port_remap_list %}
+    - Target: {{ port_remap.target }}
+      Remapped: {{ port_remap.remapped }}
+{%- endfor %}
+    

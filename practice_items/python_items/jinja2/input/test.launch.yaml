@@ -1,0 +1,18 @@
+Dump:
+  - dump_setting.ini
+
+Nodes:
+  # Executed Nodes
+  - Node: CompoA/NodeA
+  - Node: CompoB/NodeB
+
+Remap:
+  CompoRemap:
+    - Origin: OriginCompoA
+      Remapped: CompoA
+    - Origin: OriginCompoB
+      Remapped: CompoB
+  PortRemap:
+    - Target: TargetCompo
+      Remapped: CompoA
+      
