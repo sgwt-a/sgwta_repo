@@ -1,0 +1,7 @@
+### Sample text file
+name=hogehoge
+id=hugahuga
+key=
+subkey=
+key=hogehoge
+type=pokopoko
