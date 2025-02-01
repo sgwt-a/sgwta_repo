@@ -39,7 +39,8 @@ RUN pip3 install \
     ruamel.yaml==0.17.21 \
     panda3d \
     tqdm \
-    pytest
+    pytest \
+    pillow
 
 # Bazel install
 ## bazelのインストール手順マニュアル：https://bazel.build/install/ubuntu?hl=ja
