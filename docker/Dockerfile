@@ -40,7 +40,8 @@ RUN pip3 install \
     panda3d \
     tqdm \
     pytest \
-    pillow
+    pillow \
+    matplotlib
 
 # Bazel install
 ## bazelのインストール手順マニュアル：https://bazel.build/install/ubuntu?hl=ja
